@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_233721ba09c03d56dc770c9cd4dc19b0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_233721ba09c03d56dc770c9cd4dc19b0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_233721ba09c03d56dc770c9cd4dc19b0 = L.map(
+                "map_233721ba09c03d56dc770c9cd4dc19b0",
+                {
+                    center: [43.50955, 16.40625],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a7d1d1e9216d866bedb6232f62961058 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a7d1d1e9216d866bedb6232f62961058.addTo(map_233721ba09c03d56dc770c9cd4dc19b0);
+        
+    
+            var poly_line_bf00ae5198a371d2e4cec570dc905211 = L.polyline(
+                [[43.5085897, 16.4136136], [43.508665, 16.412683], [43.5087902, 16.4119999], [43.508774, 16.410972], [43.5094556, 16.4087886], [43.509606, 16.408401], [43.509515, 16.407565], [43.5095441, 16.4074425], [43.5094922, 16.4072507], [43.5094598, 16.4071967], [43.5094408, 16.4071641], [43.5094111, 16.407057], [43.5096279, 16.4062295], [43.509664, 16.406021], [43.509775, 16.40506], [43.509752, 16.404795], [43.5099224, 16.4018689], [43.5100227, 16.4003248], [43.5100319, 16.3996058]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_233721ba09c03d56dc770c9cd4dc19b0);
+        
+    
+            var marker_f48e03f2f34873b4d5dce6b8757c51e2 = L.marker(
+                [43.5085, 16.4142],
+                {
+}
+            ).addTo(map_233721ba09c03d56dc770c9cd4dc19b0);
+        
+    
+            var div_icon_d16e66b090ca278c8fc4cb45fd2ef92e = L.divIcon({
+  "html": "\u003cdiv style=\"width:30px;height:30px;border-radius:15px;background:#1f78b4;color:white;text-align:center;line-height:30px;font-weight:bold;border:2px solid white\"\u003e1\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+        var popup_d382a464328b73f9738fc03ab03bf458 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5841f7d380351d96a26828b38662c53e = $(`<div id="html_5841f7d380351d96a26828b38662c53e" style="width: 100.0%; height: 100.0%;">1. Parque Marjan</div>`)[0];
+                popup_d382a464328b73f9738fc03ab03bf458.setContent(html_5841f7d380351d96a26828b38662c53e);
+            
+        
+
+        marker_f48e03f2f34873b4d5dce6b8757c51e2.bindPopup(popup_d382a464328b73f9738fc03ab03bf458)
+        ;
+
+        
+    
+    
+            marker_f48e03f2f34873b4d5dce6b8757c51e2.bindTooltip(
+                `<div>
+                     1. Parque Marjan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f48e03f2f34873b4d5dce6b8757c51e2.setIcon(div_icon_d16e66b090ca278c8fc4cb45fd2ef92e);
+            
+    
+            var marker_246307ae8f5cb83653728ab71b258d9e = L.marker(
+                [43.5106, 16.3983],
+                {
+}
+            ).addTo(map_233721ba09c03d56dc770c9cd4dc19b0);
+        
+    
+            var div_icon_4e346e5e67beec48d771b235be98cc3f = L.divIcon({
+  "html": "\u003cdiv style=\"width:30px;height:30px;border-radius:15px;background:#1f78b4;color:white;text-align:center;line-height:30px;font-weight:bold;border:2px solid white\"\u003e2\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+        
+    
+        var popup_a1d350923a811739bc5f7121c29802d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c4ed0e82ed7a4da4ee54a4d5337e4b2 = $(`<div id="html_2c4ed0e82ed7a4da4ee54a4d5337e4b2" style="width: 100.0%; height: 100.0%;">2. Telegrin Viewpoint</div>`)[0];
+                popup_a1d350923a811739bc5f7121c29802d2.setContent(html_2c4ed0e82ed7a4da4ee54a4d5337e4b2);
+            
+        
+
+        marker_246307ae8f5cb83653728ab71b258d9e.bindPopup(popup_a1d350923a811739bc5f7121c29802d2)
+        ;
+
+        
+    
+    
+            marker_246307ae8f5cb83653728ab71b258d9e.bindTooltip(
+                `<div>
+                     2. Telegrin Viewpoint
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_246307ae8f5cb83653728ab71b258d9e.setIcon(div_icon_4e346e5e67beec48d771b235be98cc3f);
+            
+</script>
+</html>
