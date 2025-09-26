@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3dcc38c4c246c36ae60f635285d3c43f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3dcc38c4c246c36ae60f635285d3c43f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3dcc38c4c246c36ae60f635285d3c43f = L.map(
+                "map_3dcc38c4c246c36ae60f635285d3c43f",
+                {
+                    center: [45.81319166666666, 15.974833333333335],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_44b49bd45da5e7d1f631c1347aa42ff5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_44b49bd45da5e7d1f631c1347aa42ff5.addTo(map_3dcc38c4c246c36ae60f635285d3c43f);
+        
+    
+            var marker_0aaaaa1435b1564c111283f3115d5cdd = L.marker(
+                [45.813, 15.977],
+                {
+}
+            ).addTo(map_3dcc38c4c246c36ae60f635285d3c43f);
+        
+    
+            var div_icon_82431fb4bfd9c870aec473d5701b9cc0 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:28px;height:28px;border-radius:14px;\n                background:#1f77b4;color:white;text-align:center;line-height:28px;\n                font-weight:bold;border:2px solid white\"\u003e1\u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+        var popup_9f7fd4a53e06e68500d157c06b1fdc02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59113314d8794202e860d15239d7e8ba = $(`<div id="html_59113314d8794202e860d15239d7e8ba" style="width: 100.0%; height: 100.0%;">1. Praça Ban Jelačić</div>`)[0];
+                popup_9f7fd4a53e06e68500d157c06b1fdc02.setContent(html_59113314d8794202e860d15239d7e8ba);
+            
+        
+
+        marker_0aaaaa1435b1564c111283f3115d5cdd.bindPopup(popup_9f7fd4a53e06e68500d157c06b1fdc02)
+        ;
+
+        
+    
+    
+            marker_0aaaaa1435b1564c111283f3115d5cdd.bindTooltip(
+                `<div>
+                     1. Praça Ban Jelačić
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0aaaaa1435b1564c111283f3115d5cdd.setIcon(div_icon_82431fb4bfd9c870aec473d5701b9cc0);
+            
+    
+            var marker_bf7c6849d4ab233a06bb42ee3c97c4e1 = L.marker(
+                [45.8142, 15.979],
+                {
+}
+            ).addTo(map_3dcc38c4c246c36ae60f635285d3c43f);
+        
+    
+            var div_icon_20aa158b1ffe101cf972600ad5eb0f9f = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:28px;height:28px;border-radius:14px;\n                background:#1f77b4;color:white;text-align:center;line-height:28px;\n                font-weight:bold;border:2px solid white\"\u003e2\u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+        var popup_800069009f5a70cb9e6a20064d7cf3aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93297131f3ae0d64c751307a5cfca4a9 = $(`<div id="html_93297131f3ae0d64c751307a5cfca4a9" style="width: 100.0%; height: 100.0%;">2. Mercado Dolac</div>`)[0];
+                popup_800069009f5a70cb9e6a20064d7cf3aa.setContent(html_93297131f3ae0d64c751307a5cfca4a9);
+            
+        
+
+        marker_bf7c6849d4ab233a06bb42ee3c97c4e1.bindPopup(popup_800069009f5a70cb9e6a20064d7cf3aa)
+        ;
+
+        
+    
+    
+            marker_bf7c6849d4ab233a06bb42ee3c97c4e1.bindTooltip(
+                `<div>
+                     2. Mercado Dolac
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf7c6849d4ab233a06bb42ee3c97c4e1.setIcon(div_icon_20aa158b1ffe101cf972600ad5eb0f9f);
+            
+    
+            var marker_c9aa69cde93233d0b8ff5ec4b1616666 = L.marker(
+                [45.8146, 15.9799],
+                {
+}
+            ).addTo(map_3dcc38c4c246c36ae60f635285d3c43f);
+        
+    
+            var div_icon_d202b5e8c6ff4362bd0fb37eb262b62c = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:28px;height:28px;border-radius:14px;\n                background:#1f77b4;color:white;text-align:center;line-height:28px;\n                font-weight:bold;border:2px solid white\"\u003e3\u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+        var popup_5c0076d99362fdae37d7f3034616b1af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cddb3beafb1f7501e2af718b09006a47 = $(`<div id="html_cddb3beafb1f7501e2af718b09006a47" style="width: 100.0%; height: 100.0%;">3. Catedral de Zagreb</div>`)[0];
+                popup_5c0076d99362fdae37d7f3034616b1af.setContent(html_cddb3beafb1f7501e2af718b09006a47);
+            
+        
+
+        marker_c9aa69cde93233d0b8ff5ec4b1616666.bindPopup(popup_5c0076d99362fdae37d7f3034616b1af)
+        ;
+
+        
+    
+    
+            marker_c9aa69cde93233d0b8ff5ec4b1616666.bindTooltip(
+                `<div>
+                     3. Catedral de Zagreb
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c9aa69cde93233d0b8ff5ec4b1616666.setIcon(div_icon_d202b5e8c6ff4362bd0fb37eb262b62c);
+            
+    
+            var marker_860363a515bf4cd70b8cf3ed7f5dc37a = L.marker(
+                [45.8164, 15.9736],
+                {
+}
+            ).addTo(map_3dcc38c4c246c36ae60f635285d3c43f);
+        
+    
+            var div_icon_916f062b10fead741da98ce323e430fd = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:28px;height:28px;border-radius:14px;\n                background:#1f77b4;color:white;text-align:center;line-height:28px;\n                font-weight:bold;border:2px solid white\"\u003e4\u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+        var popup_c11a5c904202f944ecf80ea96c0e7fb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13b229894198e9f7ee120070b7510254 = $(`<div id="html_13b229894198e9f7ee120070b7510254" style="width: 100.0%; height: 100.0%;">4. Igreja de São Marcos</div>`)[0];
+                popup_c11a5c904202f944ecf80ea96c0e7fb4.setContent(html_13b229894198e9f7ee120070b7510254);
+            
+        
+
+        marker_860363a515bf4cd70b8cf3ed7f5dc37a.bindPopup(popup_c11a5c904202f944ecf80ea96c0e7fb4)
+        ;
+
+        
+    
+    
+            marker_860363a515bf4cd70b8cf3ed7f5dc37a.bindTooltip(
+                `<div>
+                     4. Igreja de São Marcos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_860363a515bf4cd70b8cf3ed7f5dc37a.setIcon(div_icon_916f062b10fead741da98ce323e430fd);
+            
+    
+            var marker_66c6950e6b40a2da23072570727fff79 = L.marker(
+                [45.8149, 15.972],
+                {
+}
+            ).addTo(map_3dcc38c4c246c36ae60f635285d3c43f);
+        
+    
+            var div_icon_ddf898c529b8390098d19415d319b76d = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:28px;height:28px;border-radius:14px;\n                background:#1f77b4;color:white;text-align:center;line-height:28px;\n                font-weight:bold;border:2px solid white\"\u003e5\u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+        var popup_4f2ecec99a25af2b73bf899eef0877fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe7a5eec7686880c5d5c03f9219c71ef = $(`<div id="html_fe7a5eec7686880c5d5c03f9219c71ef" style="width: 100.0%; height: 100.0%;">5. Túnel Grič</div>`)[0];
+                popup_4f2ecec99a25af2b73bf899eef0877fe.setContent(html_fe7a5eec7686880c5d5c03f9219c71ef);
+            
+        
+
+        marker_66c6950e6b40a2da23072570727fff79.bindPopup(popup_4f2ecec99a25af2b73bf899eef0877fe)
+        ;
+
+        
+    
+    
+            marker_66c6950e6b40a2da23072570727fff79.bindTooltip(
+                `<div>
+                     5. Túnel Grič
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66c6950e6b40a2da23072570727fff79.setIcon(div_icon_ddf898c529b8390098d19415d319b76d);
+            
+    
+            var marker_fd441cfbc735b15ab49404ad5ba28f71 = L.marker(
+                [45.8153, 15.973],
+                {
+}
+            ).addTo(map_3dcc38c4c246c36ae60f635285d3c43f);
+        
+    
+            var div_icon_76cee9c2e2437c44f01cc6c4643cc384 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:28px;height:28px;border-radius:14px;\n                background:#1f77b4;color:white;text-align:center;line-height:28px;\n                font-weight:bold;border:2px solid white\"\u003e6\u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+        var popup_5f1b96ebd8480d512f175d16e18aaef8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8cb69b2e6270440cbdcb6c9bc7c2067 = $(`<div id="html_a8cb69b2e6270440cbdcb6c9bc7c2067" style="width: 100.0%; height: 100.0%;">6. Funicular</div>`)[0];
+                popup_5f1b96ebd8480d512f175d16e18aaef8.setContent(html_a8cb69b2e6270440cbdcb6c9bc7c2067);
+            
+        
+
+        marker_fd441cfbc735b15ab49404ad5ba28f71.bindPopup(popup_5f1b96ebd8480d512f175d16e18aaef8)
+        ;
+
+        
+    
+    
+            marker_fd441cfbc735b15ab49404ad5ba28f71.bindTooltip(
+                `<div>
+                     6. Funicular
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd441cfbc735b15ab49404ad5ba28f71.setIcon(div_icon_76cee9c2e2437c44f01cc6c4643cc384);
+            
+    
+            var marker_b8e4e36d819356f19d58f21e1ed26777 = L.marker(
+                [45.8158, 15.9729],
+                {
+}
+            ).addTo(map_3dcc38c4c246c36ae60f635285d3c43f);
+        
+    
+            var div_icon_2b5addc3f88c95f00d8ed7a2b18ae636 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:28px;height:28px;border-radius:14px;\n                background:#1f77b4;color:white;text-align:center;line-height:28px;\n                font-weight:bold;border:2px solid white\"\u003e7\u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+        var popup_8dc0dd92e2f9c22f9903bbf4dcd2fd4f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c0228dd9de8ca5a9ada1f2e6f9ca1e0 = $(`<div id="html_5c0228dd9de8ca5a9ada1f2e6f9ca1e0" style="width: 100.0%; height: 100.0%;">7. Museu das Relações Terminadas</div>`)[0];
+                popup_8dc0dd92e2f9c22f9903bbf4dcd2fd4f.setContent(html_5c0228dd9de8ca5a9ada1f2e6f9ca1e0);
+            
+        
+
+        marker_b8e4e36d819356f19d58f21e1ed26777.bindPopup(popup_8dc0dd92e2f9c22f9903bbf4dcd2fd4f)
+        ;
+
+        
+    
+    
+            marker_b8e4e36d819356f19d58f21e1ed26777.bindTooltip(
+                `<div>
+                     7. Museu das Relações Terminadas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b8e4e36d819356f19d58f21e1ed26777.setIcon(div_icon_2b5addc3f88c95f00d8ed7a2b18ae636);
+            
+    
+            var marker_a94e6811560787b1fb2c21e5fde20336 = L.marker(
+                [45.815, 15.976],
+                {
+}
+            ).addTo(map_3dcc38c4c246c36ae60f635285d3c43f);
+        
+    
+            var div_icon_b72083f31691b10a4b9e4d95bcdb8e1f = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:28px;height:28px;border-radius:14px;\n                background:#1f77b4;color:white;text-align:center;line-height:28px;\n                font-weight:bold;border:2px solid white\"\u003e8\u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+        var popup_08984f0cd29d3e0f475a7fa7a1677963 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5a3034ae2ab70a0bb6d24844296b411 = $(`<div id="html_c5a3034ae2ab70a0bb6d24844296b411" style="width: 100.0%; height: 100.0%;">8. Almoço / Pausa</div>`)[0];
+                popup_08984f0cd29d3e0f475a7fa7a1677963.setContent(html_c5a3034ae2ab70a0bb6d24844296b411);
+            
+        
+
+        marker_a94e6811560787b1fb2c21e5fde20336.bindPopup(popup_08984f0cd29d3e0f475a7fa7a1677963)
+        ;
+
+        
+    
+    
+            marker_a94e6811560787b1fb2c21e5fde20336.bindTooltip(
+                `<div>
+                     8. Almoço / Pausa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a94e6811560787b1fb2c21e5fde20336.setIcon(div_icon_b72083f31691b10a4b9e4d95bcdb8e1f);
+            
+    
+            var marker_6bac420e872833b0d7e440a2d93e26dd = L.marker(
+                [45.8152, 15.9785],
+                {
+}
+            ).addTo(map_3dcc38c4c246c36ae60f635285d3c43f);
+        
+    
+            var div_icon_2e2eafdbafeb98adbf9b6cc0f2863c54 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:28px;height:28px;border-radius:14px;\n                background:#1f77b4;color:white;text-align:center;line-height:28px;\n                font-weight:bold;border:2px solid white\"\u003e9\u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+        var popup_97894867b7311d88ac7bc4f3840efbd0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_723681fb86294656fadfb1329491f55e = $(`<div id="html_723681fb86294656fadfb1329491f55e" style="width: 100.0%; height: 100.0%;">9. Tkalciceva</div>`)[0];
+                popup_97894867b7311d88ac7bc4f3840efbd0.setContent(html_723681fb86294656fadfb1329491f55e);
+            
+        
+
+        marker_6bac420e872833b0d7e440a2d93e26dd.bindPopup(popup_97894867b7311d88ac7bc4f3840efbd0)
+        ;
+
+        
+    
+    
+            marker_6bac420e872833b0d7e440a2d93e26dd.bindTooltip(
+                `<div>
+                     9. Tkalciceva
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6bac420e872833b0d7e440a2d93e26dd.setIcon(div_icon_2e2eafdbafeb98adbf9b6cc0f2863c54);
+            
+    
+            var marker_74c855b76ad1f1b108c0e674c6eeb6bd = L.marker(
+                [45.8075, 15.9692],
+                {
+}
+            ).addTo(map_3dcc38c4c246c36ae60f635285d3c43f);
+        
+    
+            var div_icon_153834c4716e7bd7bf1180ec0300e0e4 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:28px;height:28px;border-radius:14px;\n                background:#1f77b4;color:white;text-align:center;line-height:28px;\n                font-weight:bold;border:2px solid white\"\u003e10\u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+        var popup_29273e7c37861111575b2b7cee1d46b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f0d883c2cfbb367eb15872c86f2b1f0 = $(`<div id="html_1f0d883c2cfbb367eb15872c86f2b1f0" style="width: 100.0%; height: 100.0%;">10. Museu Mimara</div>`)[0];
+                popup_29273e7c37861111575b2b7cee1d46b5.setContent(html_1f0d883c2cfbb367eb15872c86f2b1f0);
+            
+        
+
+        marker_74c855b76ad1f1b108c0e674c6eeb6bd.bindPopup(popup_29273e7c37861111575b2b7cee1d46b5)
+        ;
+
+        
+    
+    
+            marker_74c855b76ad1f1b108c0e674c6eeb6bd.bindTooltip(
+                `<div>
+                     10. Museu Mimara
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74c855b76ad1f1b108c0e674c6eeb6bd.setIcon(div_icon_153834c4716e7bd7bf1180ec0300e0e4);
+            
+    
+            var marker_1210f88f0463a4758519cb3004d34281 = L.marker(
+                [45.8094, 15.9719],
+                {
+}
+            ).addTo(map_3dcc38c4c246c36ae60f635285d3c43f);
+        
+    
+            var div_icon_40d87fed248cf2f3e6df1ab2584887ee = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:28px;height:28px;border-radius:14px;\n                background:#1f77b4;color:white;text-align:center;line-height:28px;\n                font-weight:bold;border:2px solid white\"\u003e11\u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+        var popup_fb1c04ce3c494cc7e29e6fdb7b72af83 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa10e15967f86c80e84bc02990fb4c14 = $(`<div id="html_aa10e15967f86c80e84bc02990fb4c14" style="width: 100.0%; height: 100.0%;">11. Teatro Nacional Croata</div>`)[0];
+                popup_fb1c04ce3c494cc7e29e6fdb7b72af83.setContent(html_aa10e15967f86c80e84bc02990fb4c14);
+            
+        
+
+        marker_1210f88f0463a4758519cb3004d34281.bindPopup(popup_fb1c04ce3c494cc7e29e6fdb7b72af83)
+        ;
+
+        
+    
+    
+            marker_1210f88f0463a4758519cb3004d34281.bindTooltip(
+                `<div>
+                     11. Teatro Nacional Croata
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1210f88f0463a4758519cb3004d34281.setIcon(div_icon_40d87fed248cf2f3e6df1ab2584887ee);
+            
+    
+            var marker_de5d9997a0a43de53365f0872a66a193 = L.marker(
+                [45.807, 15.975],
+                {
+}
+            ).addTo(map_3dcc38c4c246c36ae60f635285d3c43f);
+        
+    
+            var div_icon_b2e98f7643ec25774fcfb28cd5fa7956 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:28px;height:28px;border-radius:14px;\n                background:#1f77b4;color:white;text-align:center;line-height:28px;\n                font-weight:bold;border:2px solid white\"\u003e12\u003c/div\u003e\n                ",
+  "className": "empty",
+});
+        
+    
+        var popup_649c894f1f12f297ffeb6188622fa2e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4baa6b1daa6f752d990df34df507172 = $(`<div id="html_a4baa6b1daa6f752d990df34df507172" style="width: 100.0%; height: 100.0%;">12. Hotel</div>`)[0];
+                popup_649c894f1f12f297ffeb6188622fa2e8.setContent(html_a4baa6b1daa6f752d990df34df507172);
+            
+        
+
+        marker_de5d9997a0a43de53365f0872a66a193.bindPopup(popup_649c894f1f12f297ffeb6188622fa2e8)
+        ;
+
+        
+    
+    
+            marker_de5d9997a0a43de53365f0872a66a193.bindTooltip(
+                `<div>
+                     12. Hotel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de5d9997a0a43de53365f0872a66a193.setIcon(div_icon_b2e98f7643ec25774fcfb28cd5fa7956);
+            
+    
+            var poly_line_a138c33bd8dd0b0dae120b14b655b096 = L.polyline(
+                [[45.813, 15.977], [45.8142, 15.979], [45.8146, 15.9799], [45.8164, 15.9736], [45.8149, 15.972], [45.8153, 15.973], [45.8158, 15.9729], [45.815, 15.976], [45.8152, 15.9785], [45.8075, 15.9692], [45.8094, 15.9719], [45.807, 15.975]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3dcc38c4c246c36ae60f635285d3c43f);
+        
+</script>
+</html>
